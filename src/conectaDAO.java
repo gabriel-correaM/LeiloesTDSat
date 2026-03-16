@@ -11,7 +11,7 @@ public class conectaDAO {
 
         try {
 
-            String url = "jdbc:mysql://localhost:3306/uc11";
+            String url = "jdbc:mysql://127.0.0.1:3306/uc11?useSSL=false";
             String user = "root";
             String password = "root";
 
