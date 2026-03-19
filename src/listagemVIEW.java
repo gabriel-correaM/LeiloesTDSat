@@ -154,6 +154,8 @@ public class listagemVIEW extends javax.swing.JFrame {
         
              listarProdutos();
         }
+        // Venda do produto na tela listagem ^^
+        
     }//GEN-LAST:event_btnVenderActionPerformed
 
     private void btnVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendasActionPerformed
