@@ -178,3 +178,5 @@ public class VendasVIEW extends javax.swing.JFrame {
     }
 
 }
+
+// Tela de vendas implementada (foi feita a atividade número 2 e 3 juntas).

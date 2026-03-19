@@ -70,11 +70,13 @@ public class ProdutosDAO {
         return listagem;
     } 
     
+    
+       
     public int venderProduto(int id){
         try{
             prep = this.conn.prepareStatement("UPDATE produtos SET status =? WHERE id =?");
             
-            prep.setString(1, "vendido");
+            prep.setString(1, "Vendido");
             prep.setInt(2, id);
             
             int status = prep.executeUpdate();
@@ -84,6 +86,9 @@ public class ProdutosDAO {
             return e.getErrorCode();
         }
     }
+    
+    // Listagem dos produtos vendidos:
+    private int teste;
     
     public ArrayList<ProdutosDTO> listarProdutosVendidos(){
         ArrayList<ProdutosDTO> listagem = new ArrayList<>();
@@ -102,10 +107,16 @@ public class ProdutosDAO {
             }
             
         }catch(SQLException e){
-            System.out.println("Falha ao listar produtos: "+ e.getMessage());
+           
+             System.out.println("Falha ao listar estes produtos: "+ e.getMessage());
         }
         return listagem;
+        
     }
+    
+    
+    
+    
     
     
     
