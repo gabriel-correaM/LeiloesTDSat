@@ -70,11 +70,13 @@ public class ProdutosDAO {
         return listagem;
     } 
     
+    
+    
     public int venderProduto(int id){
         try{
             prep = this.conn.prepareStatement("UPDATE produtos SET status =? WHERE id =?");
             
-            prep.setString(1, "vendido");
+            prep.setString(1, "Vendido");
             prep.setInt(2, id);
             
             int status = prep.executeUpdate();
@@ -106,6 +108,7 @@ public class ProdutosDAO {
         }
         return listagem;
     }
+    
     
     
     
